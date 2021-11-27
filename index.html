@@ -87,21 +87,6 @@
         <button data-modal-open class="btn" type="button">
           Заказать услугу
         </button>
-
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button
-              class="btn-close"
-              data-modal-close
-              type="button"
-              aria-label="Close"
-            >
-              <svg class="modal-icon">
-                <use href="./images/icons.svg#close"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
       </section>
 
       <!--------------------------------- Особенности ----------------------------------->
@@ -618,6 +603,73 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модалка -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button
+          class="btn-close"
+          data-modal-close
+          type="button"
+          aria-label="Close"
+        >
+          <svg class="modal-icon">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+
+        <div class="modal-header">Оставьте свои данные, мы вам перезвоним</div>
+
+        <form action="" class="modal-form" autocomplete="on">
+          <div class="form-field">
+            <label for="username" class="iconic user">Имя</label>
+            <input 
+              type="text"
+              name="username"
+              id="username"
+              required="required"
+            />
+            <svg class="modal-icon">
+            <use href="./images/icons.svg#letter"></use>
+          </svg>
+          </div>
+
+          <div class="form-field">
+            <label for="tel" class="iconic tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" required="required" />
+          </div>
+
+          <div class="form-field">
+            <label for="mail" class="iconic mail">Почта</label>
+            <input type="email" name="mail" id="mail" />
+          </div>
+
+          <div class="form-field">
+            <label for="comment" class="iconic comment">Комментарий</label>
+            <textarea class="comment-input"
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          
+          <input
+            type="checkbox"
+            name="privacy-policy"
+            value="policy"
+            id="policy"
+          />
+          <label for="policy"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="">Условия договора</a></label
+          >
+
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
