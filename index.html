@@ -623,49 +623,69 @@
 
         <form action="" class="modal-form" autocomplete="on">
           <div class="form-field">
-            <label class="form-label" for="username" class="iconic user">Имя</label>
-            <input class="user-input" 
+            <label class="form-label" for="username" class="iconic user"
+              >Имя</label
+            >
+            <input
+              class="user-input"
               type="text"
               name="username"
               id="username"
               required="required"
             />
-            <svg class="modal-icon">
-            <use href="./images/icons.svg#phone"></use>
-          </svg>
+            <svg class="form-icon">
+              <use href="./images/icons.svg#person"></use>
+            </svg>
           </div>
 
           <div class="form-field">
-            <label class="form-label" for="tel" class="iconic tel">Телефон</label>
-            <input class="user-input" type="tel" name="tel" id="tel" required="required" />
+            <label class="form-label" for="tel" class="iconic tel"
+              >Телефон</label
+            >
+            <input
+              class="user-input"
+              type="tel"
+              name="tel"
+              id="tel"
+              required="required"
+            />
+            <svg class="form-icon">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
           </div>
 
           <div class="form-field">
-            <label class="form-label" for="mail" class="iconic mail">Почта</label>
+            <label class="form-label" for="mail" class="iconic mail"
+              >Почта</label
+            >
             <input class="user-input" type="email" name="mail" id="mail" />
+            <svg class="form-icon">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
           </div>
 
           <div class="form-field">
-            <label class="form-label" for="comment" class="iconic comment">Комментарий</label>
-            <textarea class="comment-input"
+            <label class="form-label" for="comment" class="iconic comment"
+              >Комментарий</label
+            >
+            <textarea
+              class="comment-input"
               name="comment"
               id="comment"
               placeholder="Введите текст"
             ></textarea>
           </div>
-          
-          <input
-            type="checkbox"
-            name="privacy-policy"
-            value="policy"
-            id="policy"
-          />
-          <label for="policy"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="">Условия договора</a></label
-          >
 
-          <button type="submit">Отправить</button>
+          <label class="checkbox-label option">
+            <input class="checkbox" type="checkbox" name="privacy-policy" />
+            <span class="checkbox-icon"></span>
+            Соглашаюсь с рассылкой и принимаю
+            <a class="policy-link" href="">Условия договора</a>
+          </label>
+
+          <div class="submit-btn">
+            <button class="btn" type="submit">Отправить</button>
+          </div>
         </form>
       </div>
     </div>
